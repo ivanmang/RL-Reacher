@@ -48,8 +48,11 @@ The input of the network is 33 as the state size is 33. The first hidden layer h
 The agent solves the environment in 119 episodes.
 `Environment solved in 119 episodes!	Average Score: 30.01`
 
+From the graph, we can see that the average reward peaked at around 33 on ~200 episodes and the reward oscillates.
+
 ### Future work
 We believe some more works can be done to improve agents performance:
 1. Implement Trust Region Policy Optimization ([TRPO](https://arxiv.org/abs/1604.06778)) and Truncated Natural Policy Gradient ([TNPG](https://arxiv.org/abs/1604.06778)) 
-2. Redesign the neural network in `model.py`
-3. Further tune and optimize the hyperparamter
+2. Implement Distributed Distributional Deterministic Policy Gradients ([D4PG](https://openreview.net/forum?id=SyZipzbCb))
+3. Redesign the neural network in `model.py`
+4. Further tune and optimize the hyperparamter
