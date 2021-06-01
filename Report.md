@@ -31,12 +31,12 @@ Ornstein-Uhlenbeck noise is added to the actions to increase the "exploration" p
 
 
 ### `model.py`
-This file cotain the architecture of the network of the Actor and Crititic model. 
+This file cotain the architecture of the network of the Actor and Critic model. 
 
 #### `Actor`
 The input of the network is 33 as the state size is 33. The first hidden layer has 256 nodes, followed by a Batch Normalization layer. Then, the second hidden layer contains 128 nodes. The output layer is 4 which is the action size. All these layers are separated by Rectifier Linear Units (ReLu) except the output layer using the `tanh` function. 
 
-#### `Actor`
+#### `Critic`
 The input of the network is 33 as the state size is 33. The first hidden layer has 256 nodes, followed by a Batch Normalization layer.Then, we concatenate this layer's output with the actions. Then, the second hidden layer contains 128 nodes. The output layer have 1 node which is the Q-values. All these layers are separated by Rectifier Linear Units (ReLu). 
 
 #### Other training hyperparameter
