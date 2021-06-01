@@ -48,7 +48,10 @@ The input of the network is 33 as the state size is 33. The first hidden layer h
 The agent solves the environment in 119 episodes.
 `Environment solved in 119 episodes!	Average Score: 30.01`
 
-From the graph, we can see that the average reward peaked at around 33 on ~200 episodes and the reward oscillates.
+![Screenshot from 2021-06-01 23-15-22](https://user-images.githubusercontent.com/35868876/120347934-4ac16680-c32f-11eb-93d8-935098e1dc5d.png)
+
+
+From the graph, we can see that the average reward peaked at around 34 on ~120 episodes and the reward oscillates in a declining trend.
 
 ### Future work
 We believe some more works can be done to improve agents performance:
